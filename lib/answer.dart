@@ -8,8 +8,11 @@ class Answer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final mediaQuery = MediaQuery.of(context);
+    final availableLenght = mediaQuery.size.width;
+
     return Container(
-      width: double.infinity,
+      width: availableLenght * 0.5,
       //width: double.infinity,
       child: RaisedButton(
         textColor: Colors.white,
